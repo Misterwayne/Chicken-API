@@ -2,9 +2,11 @@
  * Required External Modules
  */
 import * as dotenv from "dotenv";
-import express from "express";
+import express, {Express} from "express";
 import cors from "cors";
 import helmet from "helmet";
+import { chickenRouter } from "./routes/chicken";
+import mongoose from "mongoose"
 
 dotenv.config();
 
@@ -12,9 +14,11 @@ dotenv.config();
 /**
  * App Variables
  */
-const app = express();
+const app: Express = express();
+const PORT = process.env.PORT;
 
-const PORT = process.env;
+// mangodb connection
+
 
 /**
  *  App Configuration
@@ -22,10 +26,21 @@ const PORT = process.env;
 app.use(helmet());
 app.use(cors());
 app.use(express.json());
+app.use(chickenRouter);
+
+const uri: string = "mongodb+srv://baidyfall319:THhNswwQ08EYY5C4@clusterwane.huudpg8.mongodb.net/?retryWrites=true&w=majority"
+const options = { useNewUrlParser: true, useUnifiedTopology: true }
 
 /**
  * Server Activation
  */
-app.listen(3000, () => {
-    console.log(`server is listening on port ${PORT}`)
-})
+
+mongoose
+  .connect(uri, options)
+  .then(() => 
+    app.listen(7000, () =>
+    console.log(`server is listening on port ${PORT} and connected to Database`)
+     )
+    ).catch(error => {
+        throw error;
+    })

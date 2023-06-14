@@ -1,11 +1,9 @@
-export interface Chickens {
+import { Document } from "mongoose";
+
+export interface IChickens extends Document {
     name: String;
     birthday: Date;
     weight: Number;
     steps: Number;
     isRunning: Boolean;
-}
-
-export interface Chicken extends Chickens {
-    id : number;
 }
