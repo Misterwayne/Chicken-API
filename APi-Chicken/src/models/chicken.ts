@@ -13,7 +13,7 @@ const chickenSchema: Schema = new Schema(
     },
 
     weight: {
-        type: Boolean,
+        type: Number,
         required: true,
     },
     steps: {

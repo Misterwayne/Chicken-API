@@ -16,6 +16,8 @@ dotenv.config();
  */
 const app: Express = express();
 const PORT = process.env.PORT;
+const PASSWORD = process.env.MONGO_PASSWORD;
+const USER = process.env.MONGO_USER;
 
 // mangodb connection
 
@@ -28,7 +30,7 @@ app.use(cors());
 app.use(express.json());
 app.use(chickenRouter);
 
-const uri: string = "mongodb+srv://baidyfall319:THhNswwQ08EYY5C4@clusterwane.huudpg8.mongodb.net/?retryWrites=true&w=majority"
+const uri: string = `mongodb+srv://${USER}:${PASSWORD}@clusterwane.huudpg8.mongodb.net/?retryWrites=true&w=majority`
 const options = { useNewUrlParser: true, useUnifiedTopology: true }
 
 /**

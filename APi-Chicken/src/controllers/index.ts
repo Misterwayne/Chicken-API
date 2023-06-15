@@ -7,7 +7,9 @@ const getChickens = async (req: Request, res: Response): Promise<void> => {
         const chickens: IChickens[] = await Chicken.find();
         res.status(200).json({ chickens })
     } catch (error) {
-        throw error
+      res.status(500).json({
+        message: "Internal Server Error",
+      })
     }
 }
 
@@ -24,13 +26,15 @@ const addChicken = async (req: Request, res: Response): Promise<void> => {
       })
   
       const newChicken: IChickens = await chicken.save()
-      const allChickens: IChickens[] = await Chicken.find()
+  
   
       res
         .status(201)
-        .json({ message: "chicken added", chicken: newChicken, chickens: allChickens })
+        .json({ message: "chicken added", chicken: newChicken})
     } catch (error) {
-      throw error
+      res.status(500).json({
+        message: "chicken addition failed",
+      })
     }
 }
 
@@ -42,16 +46,17 @@ const updateChicken = async (req: Request, res: Response): Promise<void> => {
       } = req
       const updateChicken: IChickens | null = await Chicken.findByIdAndUpdate(
         { _id: id },
-        body
+        body,
+        {new: true},
       )
-      const allChickens: IChickens[] = await Chicken.find()
       res.status(200).json({
-        message: "Todo updated",
+        message: "chicken updated",
         chicken: updateChicken,
-        chickens: allChickens,
       })
     } catch (error) {
-      throw error
+      res.status(500).json({
+        message: "Internal Server Error",
+      })
     }
 }
 
@@ -60,15 +65,38 @@ const deleteChicken = async (req: Request, res: Response): Promise<void> => {
       const deletedChicken: IChickens | null = await Chicken.findByIdAndRemove(
         req.params.id
       )
-      const allChickens: IChickens[] = await Chicken.find()
       res.status(200).json({
         message: "Chicken deleted",
-        todo: deletedChicken,
-        todos: allChickens,
+        chicken: deletedChicken,
       })
     } catch (error) {
-      throw error
+      res.status(500).json({
+        message: "Internal Server Error",
+      })
     }
 }
+
+const chickenRun = async (req: Request, res: Response): Promise<void> => {
+  try {
+    const {
+      params: { id },
+      body,
+    } = req
+    const updateChicken: IChickens | null = await Chicken.findByIdAndUpdate(
+      { _id: id },
+      {$inc: {steps: 1}},
+      {new: true},
+    )
+
+    res.status(200).json({
+      message: `Chicken ${updateChicken?.name} took a step`,
+      chicken: updateChicken,
+    })
+  } catch (error) {
+    res.status(500).json({
+      message: "Internal Server Error",
+    })
+  }
+}
   
-export { getChickens, addChicken, updateChicken, deleteChicken }
+export { getChickens, addChicken, updateChicken, deleteChicken, chickenRun }
