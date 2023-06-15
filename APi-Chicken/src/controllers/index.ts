@@ -26,14 +26,13 @@ const addChicken = async (req: Request, res: Response): Promise<void> => {
       })
   
       const newChicken: IChickens = await chicken.save()
-  
-  
-      res
-        .status(201)
-        .json({ message: "chicken added", chicken: newChicken})
+
+      res.status(201).json({
+         message: `${newChicken.name} added`, chicken: newChicken
+      })
     } catch (error) {
       res.status(500).json({
-        message: "chicken addition failed",
+        message: "Internal Server Error",
       })
     }
 }
@@ -49,10 +48,17 @@ const updateChicken = async (req: Request, res: Response): Promise<void> => {
         body,
         {new: true},
       )
-      res.status(200).json({
-        message: "chicken updated",
-        chicken: updateChicken,
-      })
+      if (updateChicken === null){
+        res.status(200).json({
+          message: "Chicken not found",
+        })
+      }
+      else {
+        res.status(200).json({
+          message: `${updateChicken?.name} updated`,
+          chicken: updateChicken,
+        })
+      }
     } catch (error) {
       res.status(500).json({
         message: "Internal Server Error",
@@ -65,10 +71,18 @@ const deleteChicken = async (req: Request, res: Response): Promise<void> => {
       const deletedChicken: IChickens | null = await Chicken.findByIdAndRemove(
         req.params.id
       )
-      res.status(200).json({
-        message: "Chicken deleted",
-        chicken: deletedChicken,
-      })
+      if (deletedChicken === null){
+        res.status(200).json({
+          message: "Chicken not found",
+        })
+      }
+      else {
+        res.status(200).json({
+          message: `${deletedChicken?.name} deleted`,
+          chicken: deletedChicken,
+        })
+      }
+
     } catch (error) {
       res.status(500).json({
         message: "Internal Server Error",
