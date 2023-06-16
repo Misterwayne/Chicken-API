@@ -23,7 +23,11 @@ const chickenSchema: Schema = new Schema(
     isRunning: {
         type: Boolean,
         default: false,
-    }
+    },
+    farmyard: { 
+        type: Schema.Types.ObjectId,
+        ref: 'Farmyard' 
+    },
   },
 )
 

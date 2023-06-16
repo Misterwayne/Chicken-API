@@ -1,11 +1,13 @@
 import React, { useState } from 'react'
 
 type Props = { 
-  saveChicken: (e: React.FormEvent, formData: IChicken | any) => void 
+  updateChicken: (e: React.FormEvent, formData: IChicken | any) => void
+  _id : string
 }
 
-const AddChicken: React.FC<Props> = ({ saveChicken }) => {
-  const [formData, setFormData] = useState<IChicken | {}>({isRunning: false})
+const UpdateChicken: React.FC<Props> = ({ updateChicken, _id }) => {
+  const [formData, setFormData] = useState<IChicken | {}>({_id : _id, isRunning : false})
+
 
   const handleForm = (e: React.FormEvent<HTMLInputElement>): void => {
     setFormData({
@@ -14,8 +16,15 @@ const AddChicken: React.FC<Props> = ({ saveChicken }) => {
     })
   }
 
+  const handleCheckBox = (e: React.FormEvent<HTMLInputElement>) => {
+    setFormData({
+        ...formData,
+        [e.currentTarget.id]: e.currentTarget.value === 'on' ? true : false
+    })
+  }
+
   return (
-    <form className='Form'  onSubmit={(e) => saveChicken(e, formData)}>
+    <form className='Form' onSubmit={(e) => updateChicken(e, formData)}>
       <div className='Form_update'>
         <div>
           <label htmlFor='name'>Name</label>
@@ -33,10 +42,14 @@ const AddChicken: React.FC<Props> = ({ saveChicken }) => {
           <label htmlFor='steps'>steps</label>
           <input onChange={handleForm} type='number' id='steps' />
         </div>
+        <div>
+          <label htmlFor='isRunning'>isRunning</label>
+          <input onChange={handleCheckBox} type="checkbox" id='isRunning' />
+        </div>
       </div>
-      <button disabled={formData === undefined ? true: false} >Add Chicken</button>
+      <button disabled={formData === undefined ? true: false} >Update Chicken</button>
     </form>
   )
 }
 
-export default AddChicken
+export default UpdateChicken

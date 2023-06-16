@@ -1,4 +1,4 @@
-import { Document } from "mongoose";
+import { Document, Schema } from "mongoose";
 
 export interface IChickens extends Document {
     name: String;
@@ -6,4 +6,5 @@ export interface IChickens extends Document {
     weight: Number;
     steps: Number;
     isRunning: Boolean;
+    farmyard: Schema.Types.ObjectId;
 }

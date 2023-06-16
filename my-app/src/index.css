@@ -15,7 +15,7 @@ body {
 
 .App {
     max-width: 728px;
-    margin: 4rem auto;
+    margin: 1rem auto;
 }
 
 .App > h1 {
@@ -78,7 +78,9 @@ body {
     margin: 0.3rem 1rem 0 0;
 }
 
-.Form label {
+.Form_update {
+    display: flex;
+    flex-direction: column;
 }
 
 .Form button {

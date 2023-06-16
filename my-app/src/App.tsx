@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import ChickenItems from './component/ChickensList'
 import AddChicken from './component/AddChicken'
 import { getChicken, addChicken, updateChicken, deleteChicken, chickenRun } from './API'
+import background from "./img/farm-bg.jpg"
 
 const App: React.FC = () => {
   const [chickens, setChickens] = useState<IChicken[]>([])
@@ -28,8 +29,8 @@ const App: React.FC = () => {
       .catch(err => console.log(err))
   }
 
-  const handleUpdateChicken = (chicken: IChicken): void => {
-    updateChicken(chicken)
+  const handleUpdateChicken = (e: React.FormEvent, formData: IChicken): void => {
+    updateChicken(formData)
       .then(({ status, data }) => {
         if (status !== 200) {
           throw new Error("Error! Chicken not updated")
@@ -62,18 +63,22 @@ const App: React.FC = () => {
   }
   
   return (
-    <main className='App'>
+    <div style={{ backgroundImage: `url(${background})`, height: '100%', backgroundRepeat: 'no-repeat',backgroundPosition: 'center',
+    backgroundSize: 'cover',}}>
+      <main className='App'>
       <h1>My Chickens</h1>
       <AddChicken saveChicken={handleSaveChicken} />
       {chickens.map((chicken: IChicken) => (
         <ChickenItems
-          key={chicken._id}
-          updateChicken={handleUpdateChicken}
-          deleteChicken={handleDeleteChicken}
-          chicken={chicken}
+        key={chicken._id}
+        updateChicken={handleUpdateChicken}
+        deleteChicken={handleDeleteChicken}
+        chickenRun={handleChickenRun}
+        chicken={chicken}
         />
-      ))}
-    </main>
+        ))}
+      </main>
+    </div>
   )
 }
 

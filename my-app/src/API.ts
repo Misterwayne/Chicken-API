@@ -35,20 +35,22 @@ export const addChicken = async (
   }
 
 export const updateChicken = async (
-    chicken: IChicken
+    formData: IChicken
   ): Promise<AxiosResponse<ApiDataType>> => {
     try {
-      const chickenUpdate: Omit<IChicken, "_id"> = {
-        name: chicken.name,
-        birthday: chicken.birthday,
-        weight: chicken.weight,
-
+      const chickenUpdate: IChicken = {
+        _id: formData._id,
+        name: formData.name,
+        birthday: formData.birthday,
+        weight: formData.weight,
+        steps: formData.steps,
+        isRunning: formData.isRunning
       }
-      const updatedTodo: AxiosResponse<ApiDataType> = await axios.put(
-        `${baseUrl}/chicken/${chicken._id}`,
+      const updatedChicken: AxiosResponse<ApiDataType> = await axios.put(
+        `${baseUrl}/chicken/${formData._id}`,
         chickenUpdate
       )
-      return updatedTodo
+      return updatedChicken
     } catch (error) {
       throw (error)
     }
@@ -71,10 +73,10 @@ export const chickenRun = async (
     _id: string
   ): Promise<AxiosResponse<ApiDataType>> => {
     try {
-      const updatedTodo: AxiosResponse<ApiDataType> = await axios.patch(
+      const updatedChicken: AxiosResponse<ApiDataType> = await axios.patch(
         `${baseUrl}/chicken/run/${_id}`
       )
-      return updatedTodo
+      return updatedChicken
     } catch (error) {
       throw (error)
     }

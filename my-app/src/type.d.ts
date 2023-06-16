@@ -1,9 +1,9 @@
 interface IChicken {
     _id: string
     name: string
-    birthday: Date
+    birthday?: string
     weight: number
-    steps?: Number
+    steps?: number
     isRunning?: Boolean
   }
   
