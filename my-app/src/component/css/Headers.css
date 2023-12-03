@@ -1,0 +1,48 @@
+/* src/components/Header.css */
+header {
+    background-color: white; /* Blue header */
+    padding: 1rem 0;
+  }
+  
+  .header-content {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+  }
+  
+  .business-name h1 {
+    color: #162adb; /* White text */
+    margin: 0;
+  }
+  
+  .header-tabs {
+    display: flex;
+    background-color: #2980b9; /* Darker blue for tabs */
+    padding: 0.5rem;
+  }
+  
+  .header-tabs a {
+    color: #fff; /* White text for tabs */
+    text-decoration: none;
+    margin-left: 10px;
+  }
+  
+  .header-tabs a:hover {
+    text-decoration: underline;
+  }
+  /* src/components/Header.css */
+
+  .phone-icon {
+    display: flex;
+    align-items: center;
+    color: #162adb;
+    font-size: 1.2rem;
+  }
+  
+  .phone-icon span {
+    margin-left: 0.5rem;
+  }
+  
+  
+  
