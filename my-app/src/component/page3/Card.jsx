@@ -42,9 +42,9 @@ const styles = {
       },
       cardText: {
         backgroundColor: `rgba(0, 0, 0, 0.5)`,
-        position: 'absolute',
-        bottom: '10px',
-        left: '10px',
+        display: 'flex',
+        alignContent: 'center',
+        justifyContent: 'center',
         color: '#fff',
         fontSize: '1.5rem',
       },
@@ -57,6 +57,9 @@ const styles = {
         bottom: '0px',
         left: '0px',
         color: '#fff',
+        display: 'flex',
+        alignContent: 'center',
+        flexWrap: 'wrap',
         fontSize: '1.5rem',
       },
 }

@@ -7,7 +7,7 @@ const Description = () => {
       <div className="description-content">
         <div className="description-text-box" style={{ paddingLeft: '15%' }}>
           <div style={{alignContent: 'center', display: 'grid', gridTemplateColumns: '50% 1% 49%', width: '80%', padding: `2vh`}}>
-            <div style={{backgroundColor: '#dfe6e775', fontSize: '20px', justifyContent: 'center', alignItems: 'center'}}>
+            <div style={{backgroundColor: '#dfe6e775', fontSize: '20px', justifyContent: 'center', alignItems: 'center', display: 'flex', flexDirection: 'column'}}>
                 <b style={{paddingLeft: '0%'}}>Notre Entreprise</b>
                 <ul>
                 <div style={{padding: `2vh`}}>
@@ -20,12 +20,14 @@ const Description = () => {
                 </ul>
             </div>
             <div></div>
-            <img style={{height: '600px'}} src='A propos.png'/>
+            <img style={{height: '600px', width: '100%', height: '100%'}} src='A propos.png'/>
           </div>
           <div style={{alignContent: 'center', display: 'grid', gridTemplateColumns: '50% 1% 49%', width: '80%', padding: `2vh`}}>
-            <img style={{height: '720px', width: '120%', marginLeft: '-75px'}} src='Pourquoi nous choisir.png'/>
+            <div style={{display: 'flex', alignContent: 'center',justifyContent: 'center', flexWrap: 'wrap'}}>
+              <img style={{width: '119%', height: '100%', marginLeft: '8px'}} src='Pourquoi nous choisir.png'/>
+            </div>
             <div></div>
-            <div style={{backgroundColor: '#dfe6e775', fontSize: '20px'}}>
+            <div style={{backgroundColor: '#dfe6e775', fontSize: '20px', height: '96%', justifyContent: 'center', alignItems: 'center', display: 'flex', flexDirection: 'column'}}>
                 <b style={{paddingLeft: '0%'}}>Pourquoi Nous Choisir ?</b>
                 <ul>
                 <li style={{padding: `2vh`}}>
@@ -44,7 +46,7 @@ const Description = () => {
             </div>
           </div>
           <div style={{alignContent: 'center', justifyContent:'center', display: 'grid', gridTemplateColumns: '50% 1% 49%', width: '80%', padding: `2vh`}}>
-            <div style={{backgroundColor: '#dfe6e775', fontSize: '20px'}}>
+            <div style={{backgroundColor: '#dfe6e775', fontSize: '20px', justifyContent: 'center', alignItems: 'center', display: 'flex', flexDirection: 'column'}}>
                 <b style={{paddingLeft: '0%'}}>Nos Services</b>
                 <ul>
                 <li style={{padding: `2vh`}}>
@@ -71,7 +73,7 @@ const Description = () => {
                 </ul>
             </div>
             <div></div>
-            <img style={{height: '600px', width:'103%'}} src='nos services.png'/>
+            <img style={{height: '600px', width: '100%', height: '100%'}} src='nos services.png'/>
           </div>
         </div>
       </div>

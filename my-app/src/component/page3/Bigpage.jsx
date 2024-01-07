@@ -8,9 +8,9 @@ const SecondPage = () => {
     <div style={styles.page}>
       <section style={styles.mainSection}>
         <div style={styles.diagonalTextContainer}>
-          <img  style={{height: '100%', marginTop: '5vh', objectFit: 'cover', marginLeft: '0px', zIndex: '-1', alignItems: 'center', width: '100%'}} src="IMG site finale.png" alt="" />
+          <img  style={{height: '70vh', marginTop: '5vh', objectFit: '', marginLeft: '0px', zIndex: '-1', alignItems: 'center', width: '100%'}} src="IMG site finale.png" alt="" />
           <div style={{ marginTop:'-15vh', backgroundColor: 'rgba(255, 255, 255, 0.5)', color: '#050f7c' }}>
-            <div style={{ display: 'flex', gap: '28%' ,flexDirection: 'row', width: '100vh', marginLeft: '7%', marginTop: '20px'}}>
+            <div style={{ display: 'flex', gap: '16%' ,flexDirection: 'row', width: '100%', marginLeft: '7%', marginTop: '20px', flexWrap: 'wrap'}}>
               <b style={styles.diagonalText2}>Société-3D</b>
               <b style={styles.diagonalText2}>Dératisation</b>
               <b style={styles.diagonalText2}>Désinsectisation</b>

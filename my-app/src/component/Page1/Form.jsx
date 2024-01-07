@@ -51,7 +51,7 @@ const Form = () => {
       </div>
       </div>
       </div>
-      <img class='bg' style={{ paddingTop: '330px'}} src='Contact.png'/>
+      <img class='bg' style={{ paddingTop: '230px'}} src='Contact.png'/>
     </div>
   );
 };
