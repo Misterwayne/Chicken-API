@@ -1,15 +1,16 @@
 /* src/styles.css */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Trebuchet MS', sans-serif;
     margin: 0;
     padding: 0;
     height: 100%;
   }
   
   header {
-    background-color: white; /* Blue background */
+    background-color: #050f7c; /* Blue background */
     color: #162adb;
     text-align: center;
+    height: 15vh;
     padding: 1rem;
     display: flex;
     justify-content: space-between;
@@ -17,30 +18,37 @@ body {
   
   /* src/styles.css */
   .description, form {
-    height: 1000px;
+    height: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
   }
   
-  .description {
-    background: url('https://www.exterminateur-nuisibles.com/img/conseils-desinsectisation.jpg'); /* Replace with your image */
+  .description {/* Replace with your image */
     background-size: 100% 100%;
     padding: 2rem;
     position: relative;
+
   }
   
   .description-content {
     display: flex;
-    justify-content: flex-end;
-    max-width: 1200px;
+    justify-content: center;
+    width: fit-content;
+    height: fit-content;
     margin: 0 auto;
   }
   
-  .description-text-box {
-    background-color: #0a0d2e79; /* Blue box */
+  .description-text-box { /* Blue box */
     padding: 2rem;
     border-radius: 10px;
-    color: #fff; /* White text */
-    max-width: 600px;
-    text-align: start;
+    color: #000000ea; /* White text */
+    width: fit-content;
+    display: grid;
+    grid-template-columns: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
   }
 
   form {
@@ -54,15 +62,25 @@ body {
   
   
   .tabs {
-    background-color: #162adb; /* Blue background */
-    color: white;
+    background-color: white; /* Blue background */
+    color: black;
     text-align: start;
-    height: 70px;
+    height: 50px;
+    padding-left: 15vh;
+  }
+
+  .tab:hover {
+    background-color: red; /* Blue background */
+    color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    margin: 0.5rem;
+    display: inline-block;
+    cursor: pointer;
   }
   
-  .tab {
-    background-color: #2980b9; /* Darker blue background */
-    color: white;
+  .tab { /* Darker blue background */
+    color: black;
     padding: 1rem;
     border-radius: 10px;
     margin: 0.5rem;
@@ -73,7 +91,7 @@ body {
   footer {
     text-align: center;
     padding: 1rem;
-    background-color: #2980b9; /* Blue background */
+    background-color: #162adb; /* Blue background */
     color: white;
   }
   

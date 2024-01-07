@@ -6,16 +6,22 @@ import './Form.css';
 const Form = () => {
   return (
     <div className="form-container">
+      <div style={{ height: '50vh'}}>
+      <div style={{display: 'flex', flexDirection: 'column'}}>
+        <img style={{ height: '100%'}} src='image.png'/>
+      <div style={{ fontSize: '30px', textAlign: 'center', paddingTop: '10vh'}}>
+        <b>Recevez votre devis gratuit</b>
+      </div>
       <div className="actual-form">
         <h2>DEMANDES D'INFORMATIONS</h2>
         <form className='box'>
           <div className='input-container'>
             <label htmlFor="name">Nom</label>
             <input type="text" id="name" name="name" />
-          </div>
-          <div className='input-container'>
             <label htmlFor="nickname">Prénom</label>
             <input type="text" id="nickname" name="nickname" />
+          </div>
+          <div className='input-container'>
           </div>
           <div className='input-container'>
             <label htmlFor="nickname">Téléphone</label>
@@ -26,6 +32,15 @@ const Form = () => {
             <input type="text" id="email" name="email" />
           </div>
           <div className='input-container'>
+            <label htmlFor='object'>Object</label>
+            <select name="object" id="Object">
+              <option value="punaise">Punaise de lits</option>
+              <option value="dératisation">Dératisation</option>
+              <option value="désinsectisation">Désinsectisation</option>
+              <option value="désinfection">Désinfection</option>
+            </select>
+          </div>
+          <div className='input-container'>
             <label htmlFor="message">Message</label>
             <textarea id="message" name="message" style={{height: '100px', width: '700px'}}></textarea>
           </div>
@@ -34,7 +49,9 @@ const Form = () => {
           </div>
         </form>
       </div>
-      <img class='bg' src='IMG_2186.jpg'/>
+      </div>
+      </div>
+      <img class='bg' style={{ paddingTop: '330px'}} src='Contact.png'/>
     </div>
   );
 };

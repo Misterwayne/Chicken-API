@@ -5,9 +5,9 @@ import PhoneIcon from './PhoneIcon'; // Import the PhoneIcon component
 const Header = () => {
   return (
     <header style={styles.header}>
-        <img src="Desinsectisation.png" alt="Logo Left" style={styles.logo} />
+    <img src="Logo_FInal_T.png" alt="Logo Left" style={styles.logo} />
         <div>
-          <h1 style={styles.headerText}>STOP NUISIBLES IDF</h1>
+          <h1 style={styles.headerText}><img src="Image_site_1T.png" alt="Logo Left" style={styles.logo}/></h1>
           <PhoneIcon/>
         </div>
         <img src="img.jpg" alt="Logo Right" style={styles.logo} />
@@ -17,16 +17,18 @@ const Header = () => {
 
 const styles = {
   header: {
+    marginTop: '-15px',
+    marginBottom: '-20px',
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',
-    padding: '20px',
-    background: 'blue',
-    color: '#fff',
-    height: '60px'
+    padding: '0px',
+    background: `rgba(255,255,255,0.9)`,
+    color: 'black'
   },
   logo: {
-    height: 100
+    height: 120,
+    paddingTop: '4vh'
   }
 }
 

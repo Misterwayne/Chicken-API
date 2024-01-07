@@ -1,12 +1,14 @@
 .form-container {
-    display: flex;
+    display: block;
     justify-content: flex-start;
     height: 100%;
+    padding: 5em;
   }
 
   .bg {
-    height: 750px;
-    width: 700px;
+    height: 100%;
+    width: 500px;
+    margin-left: 68%;
   }
   
   .city-list {
@@ -24,7 +26,7 @@
 .actual-form {
     flex: 2; /* Takes up 2/3 of the available space */
     padding: 2rem;
-    background-color: #162adb; /* Blue background color */
+    background-color: #fff; /* Blue background color */
     color: #fff; /* White text color *//* Rounded corners for a box effect */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
   }
@@ -32,7 +34,7 @@
 
   .box{
     width: 1000px;
-    height: 550px;
+    height: 600px;
     color: #162adb;
     border-radius: 8px; /* Rounded corners for a box effect */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for depth */

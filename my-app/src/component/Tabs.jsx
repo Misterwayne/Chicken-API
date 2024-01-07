@@ -9,7 +9,7 @@ import Form from './Page1/Form';
 const Tabs = () => {
   
   const [index, setIndex] = useState(0);
-  const pages = [<Form/>, <MyPage/>, <SecondPage/>];
+  const pages = [<Form/>, <SecondPage/>, <MyPage/>];
 
   useEffect(()=>{
 		setIndex(1);
@@ -18,9 +18,9 @@ const Tabs = () => {
   return (
     <section>
       <div className='tabs'>
-        <div onClick={() => setIndex(1)} className="tab">Acceuil</div>
-        <div onClick={() => setIndex(0)} className="tab">Contact</div>
-        <div onClick={() => setIndex(2)} className="tab">Renseignement</div>
+        <div onClick={() => setIndex(1)} className="tab">ACCEUIL</div>
+        <div onClick={() => setIndex(2)} className="tab">À PROPOS</div>
+        <div onClick={() => setIndex(0)} className="tab">CONTACT</div>
       </div>
       <div>
         { pages[index]}
@@ -28,5 +28,9 @@ const Tabs = () => {
     </section>
   );
 };
+
+
+
+
 
 export default Tabs;

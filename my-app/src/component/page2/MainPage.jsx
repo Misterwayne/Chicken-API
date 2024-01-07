@@ -6,14 +6,6 @@ const MyPage = () => {
   return (
     <div style={styles.page}>
       <Description/>
-      <p style={styles.bottomLeftText}>
-      <b>
-        Nos services <br/>
-      </b>
-        Traitement punaise de lit	<br/>
-      Désinsectisation	<br/>
-      Dératisation	<br/>
-      Désinfection	</p>
     </div>
   );
 };
