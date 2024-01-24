@@ -5,7 +5,7 @@ const PhoneIcon = () => {
   return (
     <div className="phone-icon">
       <p>Contactez nous au:
-      📞 <span>123-456-7890</span>
+      📞 <span>01 75 36 17 52</span>
       </p>
     </div>
   );
