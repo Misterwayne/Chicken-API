@@ -17,12 +17,10 @@ const Header = () => {
 
 const styles = {
   header: {
-    marginTop: '-15px',
-    marginBottom: '-20px',
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',
-    padding: '0px',
+    padding: '1vh',
     background: `rgba(255,255,255,0.9)`,
     color: 'black'
   },

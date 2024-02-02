@@ -36,7 +36,7 @@ header {
   .phone-icon {
     display: flex;
     align-items: center;
-    color: #162adb;
+    background-color: #162adb;
     font-size: 1.2rem;
   }
   
