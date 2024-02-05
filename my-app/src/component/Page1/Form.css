@@ -4,7 +4,7 @@
   justify-content: center;
   flex-wrap: wrap;
   height: 100%;
-  padding: 2em; /* Adjusted padding for smaller screens */
+  padding: 5em; /* Adjusted padding for smaller screens */
 }
 
 .form-images {
@@ -15,9 +15,8 @@
 }
 
 .bg {
-  height: auto; /* Adjusted to be responsive */
-  width: 100%; /* Adjusted to be responsive */
-  max-width: 45vh; /* Adjusted maximum width */
+  height: 84vh; /* Adjusted to be responsive */
+  width: 100%; /* Adjusted to be responsive */ /* Adjusted maximum width */
 }
 
 .additional-image {
@@ -49,12 +48,12 @@
   font-size: 1.5rem;
   color: #162adb;
   text-align: justify;
-  padding: 2vh;
+  border-radius: 5px;
   width: 100%; /* Make text take full width on smaller screens */
 }
 
 .form-text {
-  margin-left: 1em; /* Adjusted margin for spacing */
+  margin: 2em; /* Adjusted margin for spacing */
 }
 
 .actual-form {

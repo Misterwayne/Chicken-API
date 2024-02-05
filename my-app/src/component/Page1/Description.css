@@ -8,6 +8,10 @@
     width: 80%;
     padding: 2vh;
   }
+
+  .ite {
+    padding: 5vh;
+  }
   
   /* Individual styles for each pair */
   .description-pair {
@@ -40,6 +44,7 @@
   .description-title2 {
     position: relative;
     top: 50%;
+    text-align: center;
     left: 156%;
     z-index: 5;
     transform: translate(-50%, -50%);

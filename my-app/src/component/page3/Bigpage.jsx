@@ -7,7 +7,7 @@ const SecondPage = () => {
     <div style={styles.page}>
       <section style={styles.mainSection}>
         <div style={styles.diagonalTextContainer}>
-          <img  style={{height: '70vh', marginTop: '5vh', zIndex: '-1', alignItems: 'center', width: '100%'}} src="IMG site finale.png" alt="" />
+          <img  style={{height: '70vh', marginTop: '5vh', zIndex: '-1', alignItems: 'center', width: '92%', margin: '10vh'}} src="Image accueil IDF.png" alt="" />
           <div style={{ marginTop:'-15vh', backgroundColor: 'rgba(255, 255, 255, 0.5)', color: '#050f7c' }}>
             <div style={{ display: 'flex', gap: '20%' ,flexDirection: 'row', justifyContent: 'space-around', width: '90%', marginLeft: '4%', marginTop: '20px', flexWrap: 'wrap'}}>
               <b style={styles.diagonalText2}>Dératisation</b>
@@ -69,7 +69,7 @@ const styles = {
     fontSize: '1.5rem',
   },
   mainSection: {
-    padding: '1vh',
+    padding: '5vh',
   },
   diagonalTextContainer: {
     display: 'flex',

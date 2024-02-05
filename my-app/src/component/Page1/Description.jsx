@@ -13,10 +13,11 @@ const Description = () => {
               <div className="description-title">
                 <b>Notre Entreprise</b>
               </div>
-              Bienvenue chez Stop Nuisibles IDF :
-              Votre partenaire de confiance pour tous vos besoins en matière de désinsectisation.
-              Nous sommes spécialisés dans l'élimination efficace des insectes nuisibles,
-              offrant des solutions durables et respectueuses de l'environnement.
+                <b>Bienvenue chez Stop Nuisibles IDF :</b><br/>
+               <p>
+                Votre partenaire de confiance pour tous vos besoins en matière de désinsectisation. Nous sommes spécialisés dans l'élimination efficace des insectes nuisibles, offrant des solutions durables et respectueuses de l'environnement.
+                </p> 
+                A Stop Nuisibles IDF, nous comprenons l'importance d'un environnement sain et sans parasites. Notre équipe dévouée travaille avec un engagement inébranlable pour vous débarrasser de tout problème d'insectes, qu'il s'agisse de cafards, de fourmis, de punaises de lit, de guêpes, ou d'autres envahisseurs indésirables.
             </div>
           </div>
 
@@ -25,10 +26,10 @@ const Description = () => {
               <div className="description-title2">
                 <b>Pourquoi Nous Choisir ?</b>
               </div>
-              <p>Expertise Approfondie : Nos techniciens expérimentés sont formés pour identifier et traiter efficacement tous types d'infestations.</p>
-              <p>Solutions Respectueuses de l'Environnement : Nous privilégions des méthodes respectueuses de l'environnement, assurant la sécurité de votre famille et de vos animaux de compagnie.</p>
-              <p>Personnalisation des Services : Chaque situation est unique. Nous adaptons nos services pour répondre spécifiquement à vos besoins.</p>
-              <p>Intervention Rapide : Nous comprenons l'urgence. Notre équipe réagit rapidement pour résoudre vos problèmes de parasites dans les plus brefs délais.</p>
+              <p><b>Expertise Approfondie</b> Nos techniciens expérimentés sont formés pour identifier et traiter efficacement tous types d'infestations.</p>
+              <p><b>Solutions Respectueuses de l'Environnement </b>: Nous privilégions des méthodes respectueuses de l'environnement, assurant la sécurité de votre famille et de vos animaux de compagnie.</p>
+              <p><b>Personnalisation des Services </b>: Chaque situation est unique. Nous adaptons nos services pour répondre spécifiquement à vos besoins.</p>
+              <p><b>Intervention Rapide</b> : Nous comprenons l'urgence. Notre équipe réagit rapidement pour résoudre vos problèmes de parasites dans les plus brefs délais.</p>
             </div>
             <img style={{backgroundColor: 'lightgreen', }}  className="description-image" src="Pourquoi nous choisir.png" alt="Pourquoi nous choisir" />
           </div>
@@ -39,13 +40,16 @@ const Description = () => {
               <div className="description-title">
                 <b>Nos Services</b>
               </div>
-              <p>Désinsectisation générale</p>
-              <p>Traitement contre les punaises de lit</p>
-              <p>Éradication des cafards</p>
-              <p>Contrôle des fourmis</p>
-              <p>Extermination des guêpes et des frelons</p>
-              <p>Dératisation</p>
-              <p>Lutte contre les rongeurs</p>
+              <div className='ite'>
+
+              <p> - Désinsectisation générale</p>
+              <p> - Traitement contre les punaises de lit</p>
+              <p> - Éradication des cafards</p>
+              <p> - Contrôle des fourmis</p>
+              <p> - Extermination des guêpes et des frelons</p>
+              <p> - Dératisation</p>
+              <p> - Lutte contre les rongeurs</p>
+              </div>
             </div>
           </div>
         </div>
