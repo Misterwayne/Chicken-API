@@ -15,8 +15,8 @@
 }
 
 .bg {
-  height: 84vh; /* Adjusted to be responsive */
-  width: 100%; /* Adjusted to be responsive */ /* Adjusted maximum width */
+  height: 65vh; /* Adjusted to be responsive */
+  width: 140%; /* Adjusted to be responsive */ /* Adjusted maximum width */
 }
 
 .additional-image {
@@ -64,6 +64,8 @@
   color: #162adb;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 70%;
+  margin-left: 13%;
 }
 
 .box {

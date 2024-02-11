@@ -34,25 +34,25 @@
     top: 50%;
     right: 54%;
     transform: translate(-50%, -50%);
-    font-size: 24px; /* Adjust font size as needed */
-    color: white; /* Adjust text color as needed */
+    font-size: 34px; /* Adjust font size as needed */
+    color: rgb(44, 43, 43); /* Adjust text color as needed */
     opacity: 0;
     transition: opacity 0.3s ease;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.3);
   }
 
   .description-title2 {
     position: relative;
     top: 50%;
     text-align: center;
-    left: 156%;
+    left: 154%;
     z-index: 5;
     transform: translate(-50%, -50%);
-    font-size: 24px; /* Adjust font size as needed */
-    color: white; /* Adjust text color as needed */
+    font-size: 34px; /* Adjust font size as needed */
+    color: rgb(26, 23, 23); /* Adjust text color as needed */
     opacity: 0;
     transition: opacity 0.3s ease;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.3);
   }
   
   .description-pair:hover .description-title {
@@ -72,7 +72,7 @@
   .description-text {
     flex: 1;
     background-color: rgba(223, 230, 231, 0.75);
-    font-size: 20px;
+    font-size: 150%;
     text-align: justify;
     padding: 10px; /* Adjust padding as needed */
   }
