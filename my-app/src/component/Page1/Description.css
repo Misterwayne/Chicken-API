@@ -12,7 +12,7 @@
   .ite {
     padding: 6vh;
   }
-  
+
   /* Individual styles for each pair */
   .description-pair {
     display: flex;
@@ -32,7 +32,7 @@
   .description-title {
     position: relative;
     top: 50%;
-    right: 54%;
+    right: 50%;
     transform: translate(-50%, -50%);
     font-size: 34px; /* Adjust font size as needed */
     color: rgb(44, 43, 43); /* Adjust text color as needed */

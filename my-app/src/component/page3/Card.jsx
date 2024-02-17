@@ -19,7 +19,7 @@ const RenderCard = ({ text, imagePath, description }) => {
       {isHovering ? (
           description.map((element, index) => (
             <div key={index}>
-              <b>
+              <b className="just">
                 {element}
               </b>
               <p></p>
