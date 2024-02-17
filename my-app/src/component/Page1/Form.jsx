@@ -10,13 +10,13 @@ const Form = () => {
         <div className="image-text-pair">
             <img className="form-image" src="carte_idf-removebg-preview.png" alt="Placeholder Image"/>
             <div className="form-text" style={{ color: '#fff'}}>
-            Nous intervenons non seulement dans la région parisienne, mais également en dehors de l’Ile-de-France, sous certaines conditions. Notre équipe d’experts est prête à répondre à vos besoins, où que vous soyez, en assurant des services de lutte contre les nuisibles adaptés à vos spécificités locales.<br/>
-            Nos interventions sont disponibles 7 j/7 et 24h /24, garantissant une réponse rapide et adaptée à vos besoins que ce soit pour un diagnostic approfondi, des conseils sur mesure ou la mise en place de solutions efficaces.<br/> STOP NUISIBLES IDF votre partenaire de confiance pour garantir la qualité et l’efficacité de chaque intervention. Faites appel à notre expertise, que vous soyez basé dans la région parisienne ou au-delà, et dites adieu aux problèmes de nuisibles
+            Nous intervenons non seulement dans la région parisienne, mais également en dehors de l’<b>Ile-de-France</b>, sous certaines conditions. Notre équipe d’experts est prête à répondre à vos besoins, où que vous soyez, en assurant des services de lutte contre les nuisibles adaptés à vos spécificités locales.<br/><br/>
+            Nos interventions sont disponibles <b>7j/7j</b> et <b>24h/24h</b>, garantissant une réponse rapide et adaptée à vos besoins que ce soit pour un diagnostic approfondi, des conseils sur mesure ou la mise en place de solutions efficaces.<br/><br/><b>STOP NUISIBLES IDF</b> votre partenaire de confiance pour garantir la qualité et l’efficacité de chaque intervention. Faites appel à notre expertise, que vous soyez basé dans la région parisienne ou au-delà, et dites adieu aux problèmes de nuisibles
             </div>
         </div>
         </div>
           <div className="form-text2">
-            <h2>Recevez votre devis</h2>
+            <h2>Demandez votre devis</h2>
           </div>
         <div className="actual-form">
           <form className="box">
@@ -39,7 +39,7 @@ const Form = () => {
               <input type="text" id="email" name="email" />
             </div>
 
-              <label htmlFor="object">Object</label>
+              <label htmlFor="object">Objet</label>
             <div className="input-container">
               <select style={{width: '22vh', height: '3vh'}} name="object" id="Object">
                 <option value="punaise">Punaise de lits</option>

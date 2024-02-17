@@ -4,7 +4,7 @@ import React from 'react';
 const Footer = () => {
   return (
     <footer>
-      <p>Contact: your-email@example.com</p>
+      <p>Contact: contact@stopnuisiblesidf.fr</p>
     </footer>
   );
 };

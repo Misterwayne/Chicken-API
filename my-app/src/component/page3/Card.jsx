@@ -16,7 +16,18 @@ const RenderCard = ({ text, imagePath, description }) => {
     <div className="card" onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
       <img src={imagePath} alt="Card Background" />
       <div className={isHovering ? "cardText2" : "cardText"}>
-        <b>{isHovering ? description : text}</b>
+      {isHovering ? (
+          description.map((element, index) => (
+            <div key={index}>
+              <b>
+                {element}
+              </b>
+              <p></p>
+            </div>
+          ))
+        ) : (
+          <b>{text}</b>
+        )}
       </div>
     </div>
   );

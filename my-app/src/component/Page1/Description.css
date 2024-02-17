@@ -10,7 +10,7 @@
   }
 
   .ite {
-    padding: 5vh;
+    padding: 6vh;
   }
   
   /* Individual styles for each pair */
@@ -20,7 +20,7 @@
     justify-content: space-between;
     width: 100%;
     margin-bottom: 20px;
-    gap: 20px; /* Add margin between pairs */
+    gap: 0px; /* Add margin between pairs */
   }
   
   .description-image {
@@ -45,7 +45,7 @@
     position: relative;
     top: 50%;
     text-align: center;
-    left: 154%;
+    left: 150%;
     z-index: 5;
     transform: translate(-50%, -50%);
     font-size: 34px; /* Adjust font size as needed */
@@ -71,10 +71,10 @@
   
   .description-text {
     flex: 1;
-    background-color: rgba(223, 230, 231, 0.75);
+    background-color: rgba(223, 230, 231, 1);
     font-size: 150%;
     text-align: justify;
-    padding: 10px; /* Adjust padding as needed */
+    padding: 0px; /* Adjust padding as needed */
   }
   
   .description-title {

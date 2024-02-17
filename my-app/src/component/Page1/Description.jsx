@@ -23,7 +23,7 @@ const Description = () => {
             </div>
           </div>
 
-          <div className="description-pair">
+          <div className="description-pair" style={{backgroundColor: 'lightgreen', }}>
             <div className="description-text">
               <div className="description-title2">
                 <b>Pourquoi Nous Choisir ?</b>
@@ -35,7 +35,7 @@ const Description = () => {
                 <p><b style={{color:'#162adb'}}> Intervention Rapide</b><br/> Nous comprenons l'urgence. Notre équipe réagit rapidement pour résoudre vos problèmes de parasites dans les plus brefs délais.</p><br/>
               </div>
             </div>
-            <img style={{backgroundColor: 'lightgreen', }}  className="description-image" src="Pourquoi nous choisir.png" alt="Pourquoi nous choisir" />
+            <img style={{backgroundColor: 'lightgreen', marginTop: '1.5%'}}  className="description-image" src="Pourquoi nous choisir.png" alt="Pourquoi nous choisir" />
           </div>
 
           <div className="description-pair">

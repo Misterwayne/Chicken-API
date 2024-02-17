@@ -18,7 +18,7 @@ const Tabs = () => {
   return (
     <section>
       <div className='tabs'>
-        <div onClick={() => setIndex(1)} className="tab">ACCEUIL</div>
+        <div onClick={() => setIndex(1)} className="tab">ACCUEIL</div>
         <div onClick={() => setIndex(2)} className="tab">À PROPOS</div>
         <div onClick={() => setIndex(0)} className="tab">CONTACT</div>
       </div>

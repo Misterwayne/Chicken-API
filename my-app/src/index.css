@@ -83,7 +83,7 @@ form {
   text-align: start;
   height: 5vh;
   padding-left: 6%;
-  margin-top: 1%;
+  margin-top: 4%;
 }
 
 .tab:hover {
@@ -100,7 +100,7 @@ form {
   /* Darker blue background */
   background-color: #162adb;
   color: white;
-  padding: 1rem;
+  padding: 2vh;
   border-radius: 10px;
   margin: 0.5rem;
   display: inline-block;

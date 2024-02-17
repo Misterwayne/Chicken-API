@@ -21,6 +21,7 @@ const styles = {
     justifyContent: 'space-between',
     alignItems: 'center',
     padding: '1vh',
+    paddingTop: '3%',
     background: `rgba(255,255,255,0.9)`,
     color: 'black'
   },
