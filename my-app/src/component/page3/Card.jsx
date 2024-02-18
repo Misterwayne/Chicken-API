@@ -22,7 +22,12 @@ const RenderCard = ({ text, imagePath, description }) => {
               <b className="just">
                 {element}
               </b>
-              <p></p>
+              {index + 1 === description.length
+                ?
+                <></> 
+                :
+                <p></p>
+              }
             </div>
           ))
         ) : (

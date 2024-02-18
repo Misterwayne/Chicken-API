@@ -73,7 +73,7 @@
     flex: 1;
     background-color: rgba(223, 230, 231, 1);
     font-size: 150%;
-    text-align: justify;
+    text-align: start;
     padding: 0px; /* Adjust padding as needed */
   }
   
